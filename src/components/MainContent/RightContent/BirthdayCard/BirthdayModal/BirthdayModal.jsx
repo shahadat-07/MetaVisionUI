@@ -2,28 +2,16 @@ import { React, useState } from "react";
 import BirthdayCard from "./BirthdayCard/BirthdayCard";
 
 const BirthdayModal = ({ isBoxVisible }) => {
-  const [visible, setVisible] = useState(true);
-  console.log(visible);
-
-  const toogleOut = () => {
-    setVisible(false);
-  };
   return (
     <div
-      className={`absolute z-[100] bg-white top-24 left-96 rounded-xl shadow-lg w-1/2 p-6 ${
-        isBoxVisible || visible ? "hidden" : "hidden"
-      }`}
+      className={`hidden absolute z-[100] bg-white top-24 left-96 rounded-xl shadow-lg w-1/2 p-6`}
     >
       {/* <!-- close button --> */}
-      <button
-        onClick={toogleOut}
-        className="p-2.5 bg-gray-100 rounded-full m-3"
-        type="button"
-      >
+      {/* <button className="p-2.5 bg-gray-100 rounded-full m-3" type="button">
         Hi
-      </button>
+      </button> */}
 
-      <div className="flex items-center space-x-3 mb-10">
+      <div className="flex items-center space-x-3 mb-10 ">
         <ion-icon
           name="gift"
           className="text-yellow-500 text-xl bg-yellow-50 p-1 rounded-md"
