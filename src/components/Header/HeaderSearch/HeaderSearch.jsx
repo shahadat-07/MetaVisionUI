@@ -30,7 +30,7 @@ const HeaderSearch = () => {
       <SearchIcon className="h-5 w-5 text-gray-400 absolute top-4 left-24 lg:left-4 hidden lg:block" />
 
       <div
-        className={`absolute border shadow-xl w-96 p-5 bg-white dark:bg-slate-900 rounded-lg ${
+        className={`absolute border shadow-xl w-96 p-5 bg-white dark:bg-slate-900 rounded-lg z-50 ${
           isBoxVisible ? "" : "hidden"
         }`}
       >

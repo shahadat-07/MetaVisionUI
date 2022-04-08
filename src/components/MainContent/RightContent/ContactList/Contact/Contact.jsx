@@ -1,16 +1,14 @@
 import React from "react";
 
 const Contact = (props) => {
-  // console.log(props);
-  const { src, className, username } = props;
-  // console.log(src, `"${src}"`);
+  const { userImg, isActive, userName } = props.user;
   return (
-    <a href="#id">
-      <div className="contact-avatar">
-        <img src={src} alt="" />
-        <span className={className}></span>
+    <a className="flex space-x-2 mb-4" href="#id">
+      <div className="">
+        <img className="w-10 rounded-full" src={userImg} alt="" />
+        <span className={isActive}></span>
       </div>
-      <div className="contact-username"> {username} </div>
+      <div className=""> {userName} </div>
     </a>
   );
 };

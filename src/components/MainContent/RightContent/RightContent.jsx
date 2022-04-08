@@ -8,11 +8,8 @@ const RightContent = () => {
     <div className="lg:flex lg:space-x-10">
       <div className="lg:w-72 w-full">
         <BirthdayCard />
-        <h3 className="text-xl font-semibold"> Contacts </h3>
-        <div className uk-sticky="offset:80">
-          <Nav />
-          <ContactList />
-        </div>
+        {/* <Nav /> */}
+        <ContactList />
       </div>
     </div>
   );
