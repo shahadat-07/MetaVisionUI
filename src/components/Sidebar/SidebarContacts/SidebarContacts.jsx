@@ -3,8 +3,11 @@ import Contact from "./Contact/Contact";
 
 const SidebarContacts = () => {
   return (
-    <section className="mt-3 border-t-2">
-      <h3 className="text-lg font-semibold text-gray-800 mt-3"> Contacts </h3>
+    <section className="mt-3 border-t-2 dark:border-t-slate-700">
+      <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-3">
+        {" "}
+        Contacts{" "}
+      </h3>
 
       <div className="my-2 ml-1">
         <Contact

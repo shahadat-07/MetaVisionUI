@@ -6,10 +6,8 @@ const Contact = ({ avatar, className = "", userName }) => {
     <a className="flex space-x-2 mb-2 items-center" href="#id">
       <div className="contact-avatar">
         <img className="w-10 rounded-full" src={avatar} alt="" />
-
-        {/* <span className={className}></span> */}
       </div>
-      <div className="contact-username">{userName}</div>
+      <div className="text-gray-600 dark:text-gray-200">{userName}</div>
     </a>
   );
 };

@@ -10,7 +10,10 @@ const Comments = (props) => {
           <Comment comment={comment} />
         ))}
       </div>
-      <a href="#id" className="hover:text-blue-600 hover:underline">
+      <a
+        href="#id"
+        className="hover:text-blue-600 hover:underline dark:text-gray-200"
+      >
         {" "}
         Veiw 8 more Comments{" "}
       </a>

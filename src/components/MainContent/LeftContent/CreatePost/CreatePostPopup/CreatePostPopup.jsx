@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { XIcon } from "@heroicons/react/solid";
+import PostInput from "../../../../../Contexts/PostInput";
 
 const CreatePostPopup = (props) => {
   const isBoxVisible = props.isBoxVisible;
@@ -8,23 +9,28 @@ const CreatePostPopup = (props) => {
   const toogle = () => {
     setVisible((prevState) => ({ isVisible: !prevState.isVisible }));
   };
-  const toogleOut = () => {
-    setVisible({ isVisible: false });
-  };
+
+  const toogleOut = props.toogleOut;
+
+  const [postWritting, setPostWritting] = useState("");
+
   return (
     <section>
       <div
-        className={` absolute bg-white top-0 z-50 ${
+        className={` absolute bg-white dark:bg-slate-700 top-0 z-50 ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >
         <div className="rounded-lg p-0 relative shadow-2xl">
           <div className="text-center py-3 border-b">
-            <h3 className="relative text-lg font-semibold text-gray-700">
+            <h3 className="relative text-lg font-semibold text-gray-700 dark:text-gray-200">
               {" "}
               Create Post{" "}
             </h3>
-            <XIcon className="absolute top-1 right-2 w-10 bg-gray-100 text-gray-500 rounded-full p-2.5 cursor-pointer" />
+            <XIcon
+              onClick={toogleOut}
+              className="absolute top-1 right-2 w-10 bg-gray-100 dark:bg-slate-900 text-gray-500 dark:text-gray-200 rounded-full p-2.5 cursor-pointer"
+            />
           </div>
           <div className="flex flex-1 items-start space-x-4 p-5">
             <img
@@ -35,17 +41,22 @@ const CreatePostPopup = (props) => {
             />
 
             <div className="flex-1">
-              <textarea
-                className="text-black shadow-none focus:shadow-none text-xl font-medium resize-none border-0 focus:ring-0 bg-gray-50 "
-                rows="5"
-                cols="32"
-                placeholder="What's Your Mind ? Stella!"
-              ></textarea>
+              <PostInput.Provider value={postWritting}>
+                {" "}
+                <textarea
+                  value={postWritting}
+                  onChange={(e) => setPostWritting(e.target.value)}
+                  className="text-black shadow-none focus:shadow-none text-xl font-medium resize-none border-0 focus:ring-0 bg-gray-50 dark:bg-slate-900"
+                  rows="5"
+                  cols="32"
+                  placeholder="What's Your Mind ? Stella!"
+                ></textarea>
+              </PostInput.Provider>
             </div>
           </div>
           <div className="bsolute bottom-0 p-4 space-x-4 w-full">
-            <div className="flex bg-gray-50 border border-purple-100 rounded-2xl p-2 shadow-sm items-center">
-              <div className="lg:block hidden ml-1 text-sm">
+            <div className="flex bg-gray-50 dark:bg-slate-900 border border-purple-100 dark:border-0 rounded-2xl p-2 shadow-sm items-center">
+              <div className="lg:block hidden ml-1 text-sm dark:text-gray-200">
                 {" "}
                 Add to your post{" "}
               </div>
@@ -182,7 +193,7 @@ const CreatePostPopup = (props) => {
                 <svg
                   onClick={toogle}
                   onBlur={toogleOut}
-                  className=" hover:bg-gray-200 h-9 p-1.5 rounded-full w-9 cursor-pointer"
+                  className=" hover:bg-gray-200 dark:bg-gray-200 h-9 p-1.5 rounded-full w-9 cursor-pointer"
                   id="veiw-more"
                   uk-toggle="target: #veiw-more; animation: uk-animation-fade"
                   fill="none"
@@ -204,7 +215,7 @@ const CreatePostPopup = (props) => {
             </div>
           </div>
           <div className="flex items-center w-full justify-between border-t p-3">
-            <select className="mt-2 border-gray-400">
+            <select className="mt-2 border-gray-400 dark:bg-slate-900 dark:text-gray-200">
               <option className="text-gray-500">Only me</option>
               <option className="text-gray-500">Every one</option>
               <option className="text-gray-500">People I Follow </option>

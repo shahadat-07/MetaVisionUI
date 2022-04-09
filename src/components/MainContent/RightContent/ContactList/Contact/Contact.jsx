@@ -23,18 +23,18 @@ const Contact = (props) => {
     <section className="relative ">
       <div onMouseEnter={toogle} onMouseLeave={toogleOut}>
         <a
-          className="flex items-center space-x-2 mb-2 hover:bg-gray-100 px-2 py-1 rounded-lg"
+          className="flex items-center space-x-2 mb-2 hover:bg-gray-100 dark:hover:bg-gray-700 px-2 py-1 rounded-lg"
           href="#id"
         >
           <div className="">
             <img className="w-10 rounded-full" src={userImg} alt="" />
             <span className={isActive}></span>
           </div>
-          <div className="transition delay-700"> {userName} </div>
+          <div className="dark:text-gray-200"> {userName} </div>
         </a>
       </div>
       <div
-        className={`absolute z-50 bg-white -top-10 -left-96 shadow-lg px-6 py-4 text-center  ${
+        className={`absolute z-50 bg-white dark:bg-slate-800 -top-10 -left-96 shadow-lg px-6 py-4 text-center  ${
           isBoxVisible ? "" : "hidden"
         }`}
       >
@@ -46,8 +46,10 @@ const Contact = (props) => {
             alt=""
             srcset=""
           />
-          <p className="font-semibold text-lg text-gray-900 mb-2">{userName}</p>
-          <p>
+          <p className="font-semibold text-lg text-gray-900 dark:text-gray-200 mb-2">
+            {userName}
+          </p>
+          <p className="dark:text-gray-200">
             Become friend with <span className="font-bold">@john</span> and{" "}
             <span className="font-bold">
               14 <br />

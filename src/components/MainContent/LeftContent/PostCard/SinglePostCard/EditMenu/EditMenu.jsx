@@ -13,10 +13,10 @@ const EditMenu = () => {
     <div className="relative">
       <a onClick={toogle} onBlur={toogleOut} href="#id">
         {" "}
-        <DotsHorizontalIcon className="w-10 text-2xl text-gray-700 hover:bg-gray-200 rounded-full p-2 transition -mr-1 dark:hover:bg-gray-700" />
+        <DotsHorizontalIcon className="w-10 text-2xl text-gray-700 dark:text-gray-200 hover:bg-gray-200 rounded-full p-2 transition -mr-1 dark:hover:bg-gray-700" />
       </a>
       <div
-        className={`absolute -top-2 right-3 bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 text-base border border-gray-100 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700 ${
+        className={`absolute -top-2 right-3 bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 text-base border border-gray-100 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-800 ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >

@@ -4,11 +4,11 @@ const SidebarToogler = () => {
   return (
     <a
       href="#id"
-      className="see-mover h-10 flex my-1 pl-2 rounded-xl text-gray-600"
+      className="see-mover h-10 flex my-1 pl-2 rounded-xl text-gray-600 dark:text-gray-200"
     >
       <span className="w-full flex items-center" id="more-veiw">
         <svg
-          className="  bg-gray-100 mr-2 p-0.5 rounded-full text-lg w-7"
+          className="  bg-gray-100 dark:bg-slate-700 mr-2 p-0.5 rounded-full text-lg w-7"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"

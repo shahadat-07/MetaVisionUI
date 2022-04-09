@@ -2,7 +2,7 @@ import React from "react";
 
 const SidebarFooter = () => {
   return (
-    <div className="text-sm space-x-2 font-medium mt-4 text-gray-700">
+    <div className="text-sm space-x-2 font-medium mt-4 text-gray-700 dark:text-gray-100 ">
       <a href="#id">About</a>
       <a href="#id">Blog </a>
       <a href="#id">Careers</a>

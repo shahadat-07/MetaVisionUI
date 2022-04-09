@@ -26,8 +26,11 @@ const Comment = (props) => {
                 {}
                 <i className="uil-heart"></i> Love{" "}
               </a>
-              <a href="#id"> Replay </a>
-              <span> 3d </span>
+              <a className="dark:text-gray-200" href="#id">
+                {" "}
+                Replay{" "}
+              </a>
+              <span className="dark:text-gray-200"> 3d </span>
             </div>
           </div>
         </div>

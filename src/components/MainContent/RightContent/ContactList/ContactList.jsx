@@ -121,9 +121,11 @@ const ContactList = () => {
                 key={category}
                 className={({ selected }) =>
                   classNames(
-                    "w-full py-2.5 text-sm leading-5 font-semibold text-blue-700 rounded-lg",
+                    "w-full py-2.5 text-sm leading-5 font-semibold text-blue-700 dark:text-gray-200 rounded-lg",
                     "focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60",
-                    selected ? "bg-white shadow" : "hover:bg-white/[0.2] "
+                    selected
+                      ? "bg-white dark:bg-slate-600 shadow"
+                      : "hover:bg-white/[0.2] "
                   )
                 }
               >
@@ -136,7 +138,7 @@ const ContactList = () => {
               <Tab.Panel
                 key={idx}
                 className={classNames(
-                  "bg-white rounded-xl p-3",
+                  "bg-white dark:bg-slate-800 rounded-xl p-3",
                   "focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60"
                 )}
               >

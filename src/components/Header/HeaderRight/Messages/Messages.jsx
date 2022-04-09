@@ -9,13 +9,13 @@ const Messages = () => {
   const toogle = () => {
     setVisible((prevState) => ({ isBoxVisible: !prevState.isBoxVisible }));
   };
-  // const toogleOut = () => {
-  //   setVisible({ isBoxVisible: false });
-  // };
+  const toogleOut = () => {
+    setVisible({ isBoxVisible: false });
+  };
 
   return (
     <>
-      <a onClick={toogle} href="#id" className="relative">
+      <a onClick={toogle} onBlur={toogleOut} href="#id" className="relative">
         <ChatAltIcon className="h-9 text-gray-700 dark:text-gray-50 bg-gray-200 dark:bg-slate-700 rounded-full p-2 ml-3.5" />
         <div class="rounded-full flex p-2 absolute bg-red-500 top-[-5px] left-10">
           <p class="absolute top-0 left-1 font-bold text-white text-xs">4</p>
@@ -27,7 +27,7 @@ const Messages = () => {
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >
-        <div>
+        <div onMouseEnter={toogle}>
           <div>
             <h1 className="text-xl font-semibold text-gray-600 dark:text-gray-100 mb-4">
               Messages{" "}

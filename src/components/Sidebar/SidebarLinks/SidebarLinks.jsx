@@ -4,7 +4,7 @@ import SidebarItem from "./SidebarItem/SidebarItem";
 const SidebarLinks = () => {
   return (
     <ul>
-      <SidebarItem className="active" emoji="🤗" title="My Feed" />
+      <SidebarItem className="" emoji="🤗" title="My Feed" />
       <SidebarItem emoji="👫" title="My Friends" />
       <SidebarItem emoji="😎" title="My communities" />
 

@@ -16,7 +16,7 @@ const PostTopBar = (props) => {
         <a href="#id" className="text-black dark:text-gray-100">
           {username}
         </a>
-        <div className="text-gray-700 flex items-center space-x-2">
+        <div className="text-gray-700 dark:text-gray-50 flex items-center space-x-2">
           {hours}
           <span> hrs </span> <ion-icon name="people"></ion-icon>
         </div>
