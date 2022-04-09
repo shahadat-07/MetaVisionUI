@@ -54,20 +54,8 @@ const PostCard = () => {
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, minima",
         "Minus sed omnis animi vel eveniet illum magnam ipsum? Iure, dolor hic",
       ],
-      // comments: [
-      //   {
-      //     comment:
-      //       "I am so happy to be here ! It's great opportunity to our generation !!!",
-      //   },
-      //   {
-      //     comment:
-      //       "Thanks to Metavision i have got many interesting things about different metaverses! It's changed my life! Thank you guys",
-      //   },
-      // ],
     },
   ];
-
-  // console.log("From post details", postDetails);
 
   return (
     <section className="space-y-7">

@@ -1,15 +1,24 @@
-import React from "react";
-
+import { React, useState } from "react";
+import { DotsHorizontalIcon } from "@heroicons/react/solid";
 const EditMenu = () => {
+  const [isBoxVisible, setVisible] = useState({ isBoxVisible: false });
+
+  const toogle = () => {
+    setVisible((prevState) => ({ isBoxVisible: !prevState.isBoxVisible }));
+  };
+  const toogleOut = () => {
+    setVisible({ isBoxVisible: false });
+  };
   return (
-    <div>
-      <a href="#id">
+    <div className="relative">
+      <a onClick={toogle} onBlur={toogleOut} href="#id">
         {" "}
-        <i className="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1 dark:hover:bg-gray-700"></i>{" "}
+        <DotsHorizontalIcon className="w-10 text-2xl text-gray-700 hover:bg-gray-200 rounded-full p-2 transition -mr-1 dark:hover:bg-gray-700" />
       </a>
       <div
-        className="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700"
-        uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small"
+        className={`absolute -top-2 right-3 bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 text-base border border-gray-100 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700 ${
+          isBoxVisible.isBoxVisible ? "" : "hidden"
+        }`}
       >
         <ul className="space-y-1">
           <li>

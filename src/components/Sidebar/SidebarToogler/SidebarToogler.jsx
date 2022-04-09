@@ -5,7 +5,6 @@ const SidebarToogler = () => {
     <a
       href="#id"
       className="see-mover h-10 flex my-1 pl-2 rounded-xl text-gray-600"
-      uk-toggle="target: #more-veiw; animation: uk-animation-fade"
     >
       <span className="w-full flex items-center" id="more-veiw">
         <svg
@@ -22,7 +21,7 @@ const SidebarToogler = () => {
         </svg>
         See More
       </span>
-      <span className="w-full flex items-center" id="more-veiw" hidden>
+      <span className="w-full flex items-center hidden" id="more-veiw">
         <svg
           className="bg-gray-100 mr-2 p-0.5 rounded-full text-lg w-7"
           fill="currentColor"

@@ -15,48 +15,51 @@ const SidebarLinks = () => {
       <SidebarItem emoji="🎶" title="#NFT Music" />
 
       <SidebarItem emoji="📷" title=" #NFT Photos" />
+      <div className="hidden">
+        <SidebarItem id="more-veiw" className="" emoji="🤯" title="#Create" />
 
-      <SidebarItem
-        id="more-veiw"
-        className="hidden"
-        emoji="🤯"
-        title="#Create"
-      />
+        <SidebarItem id="more-veiw" className="" emoji="⚒" title="#Mint" />
 
-      <SidebarItem id="more-veiw" className="hidden" emoji="⚒" title="#Mint" />
+        <SidebarItem id="more-veiw" className="" emoji="🥳" title="My Events" />
 
-      <SidebarItem
-        id="more-veiw"
-        className="hidden"
-        emoji="🥳"
-        title="My Events"
-      />
+        <SidebarItem
+          id="more-veiw"
+          className=""
+          emoji="💸"
+          title="My finance"
+        />
 
-      <SidebarItem
-        id="more-veiw"
-        className="hidden"
-        emoji="💸"
-        title="My finance"
-      />
-
-      <SidebarItem
-        id="more-veiw"
-        className="hidden"
-        emoji="🤑"
-        title="#Wallet statistic"
-      />
-      <li id="more-veiw" hidden>
-        <a href="#id">
-          <p className="sidebar-emo">🗒</p>
-          <span> #Whitelists </span> <span className="new">N</span>
-        </a>
-      </li>
-      <li id="more-veiw" hidden>
-        <a href="#id">
-          <p className="sidebar-emo">🎁</p>
-          <span> #Airdrops </span> <span className="new">N</span>
-        </a>
-      </li>
+        <SidebarItem
+          id="more-veiw"
+          className=""
+          emoji="🤑"
+          title="#Wallet statistic"
+        />
+        <li className="relative">
+          <a
+            className="flex items-center space-x-2 font-semibold text-base text-gray-600 p-2.5 hover:bg-gray-100 rounded-lg"
+            href="#id"
+          >
+            <p className="text-lg">🗒</p>
+            <span> #Whitelists </span>
+            <span className="absolute top-3 right-2 text-red-500 bg-red-200 p-1 text-xs font-medium">
+              N
+            </span>
+          </a>
+        </li>
+        <li className="relative">
+          <a
+            className="flex items-center space-x-2 font-semibold text-base text-gray-600 p-2.5 hover:bg-gray-100 rounded-lg"
+            href="#id"
+          >
+            <p className="text-lg">🎁</p>
+            <span>#Airdrops </span>
+            <span className="absolute top-3 right-2 text-red-500 bg-red-200 p-1 text-xs font-medium">
+              N
+            </span>
+          </a>
+        </li>
+      </div>
     </ul>
   );
 };

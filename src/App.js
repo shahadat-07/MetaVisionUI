@@ -10,8 +10,8 @@ function App() {
     <div className="dark:text-white dark:bg-slate-900">
       {/* <Tab /> */}
       <BirthdayModal />
-      <Sidebar />
       <Header />
+      <Sidebar />
       <MainContent />
     </div>
   );

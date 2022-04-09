@@ -10,22 +10,6 @@ const UserStory = () => {
         storyAvatar="https://i.ibb.co/f1mwB8V/avatar-6.jpg"
         storyContent="@Desais"
       />
-      {/* <a href="#id">
-        <div className="single_story">
-          <img src={require("../../../../assets/images/meta.png")} alt="" />
-          <div className="story-avatar">
-            {" "}
-            <img
-              src={require("../../../../assets/images/avatar-6.jpg")}
-              alt=""
-            />
-          </div>
-          <div className="story-content">
-            {" "}
-            <h4>@Desais </h4>{" "}
-          </div>
-        </div>
-      </a> */}
       <StoryBlock
         storyImg="https://i.ibb.co/6tNPnzh/meta-2.jpg"
         storyAvatar="https://i.ibb.co/FbXfQ2X/avatar-2.jpg"

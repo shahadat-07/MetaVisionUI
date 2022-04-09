@@ -25,7 +25,7 @@ const Notifications = () => {
       </a>
       {/* w-3/4 sm:w-2/4 lg:w-2/4 */}
       <div
-        className={`absolute border shadow-xl px-5 py-6 bg-white dark:bg-slate-900 rounded-lg w-[60vw] sm:w-[50vw] md:w-[35vw] lg-w-[15vw] xl:w-[25vw] 2xl:w-[20vw] top-16 right-3  border-gray-100 h-3/4 overflow-auto ${
+        className={`absolute border shadow-xl px-5 py-6 bg-white dark:bg-slate-900 rounded-lg w-[60vw] sm:w-[50vw] md:w-[35vw] lg-w-[15vw] xl:w-[25vw] 2xl:w-[25vw] top-16 right-3 h-[580px] border-gray-100 overflow-auto ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >

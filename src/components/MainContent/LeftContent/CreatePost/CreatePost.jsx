@@ -1,8 +1,17 @@
-import React from "react";
+import { React, useState } from "react";
+import CreatePostPopup from "./CreatePostPopup/CreatePostPopup";
 
 const CreatePost = () => {
+  const [isBoxVisible, setVisible] = useState({ isBoxVisible: false });
+
+  const toogle = () => {
+    setVisible((prevState) => ({ isBoxVisible: !prevState.isBoxVisible }));
+  };
+  const toogleOut = () => {
+    setVisible({ isBoxVisible: false });
+  };
   return (
-    <div className="card lg:mx-0 p-4" uk-toggle="target: #create-post-modal">
+    <div className="relative lg:mx-0 p-4">
       <div className="flex space-x-3">
         <img
           src="https://i.ibb.co/FbXfQ2X/avatar-2.jpg"
@@ -10,6 +19,8 @@ const CreatePost = () => {
           alt=""
         />
         <input
+          onFocus={toogle}
+          onBlur={toogleOut}
           placeholder="What's Your Mind ? Hamse!"
           className="bg-gray-100 hover:bg-gray-200 flex-1 h-10 px-6 rounded-full"
         />
@@ -71,9 +82,10 @@ const CreatePost = () => {
               d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          Fealing /Activity
+          Feeling /Activity
         </div>
       </div>
+      <CreatePostPopup isBoxVisible={isBoxVisible} />
     </div>
   );
 };

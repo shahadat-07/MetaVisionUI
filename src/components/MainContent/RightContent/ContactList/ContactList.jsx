@@ -53,9 +53,20 @@ const ContactList = () => {
         userImg: "https://i.ibb.co/7Vn1NcB/avatar-8.jpg",
         isActive: "Yes",
       },
-
       {
-        id: 1,
+        id: 8,
+        userName: "@CryptologY_",
+        userImg: "https://i.ibb.co/8DtZY6f/avatar-4.jpg",
+        isActive: "Yes",
+      },
+      {
+        id: 8,
+        userName: "@CryptologY_",
+        userImg: "https://i.ibb.co/8DtZY6f/avatar-4.jpg",
+        isActive: "Yes",
+      },
+      {
+        id: 8,
         userName: "@CryptologY_",
         userImg: "https://i.ibb.co/8DtZY6f/avatar-4.jpg",
         isActive: "Yes",
@@ -102,7 +113,7 @@ const ContactList = () => {
 
   return (
     <section>
-      <div className="w-full max-w-md px-2 py-16 sm:px-0">
+      <div className="w-full max-w-md px-2 py-16 sm:px-0 ">
         <Tab.Group>
           <Tab.List className="flex p-1 space-x-1 bg-blue-900/20 rounded-xl">
             {Object.keys(categories).map((category) => (
