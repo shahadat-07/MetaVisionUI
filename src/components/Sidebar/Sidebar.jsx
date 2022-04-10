@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <section>
       <div
-        className={`-translate-x-96 md:translate-x-0 w-[300px] transition-all delay-200 ease-in fixed top-0 left-0 z-10 overflow-scroll  h-full `}
+        className={`-translate-x-96 md:translate-x-0 w-[300px] transition-all delay-200 ease-in fixed top-0 left-0 z-10 overflow-scroll overflow-x-hidden h-full`}
       >
         <div className="px-3 mt-[78px] border-t-2 bor border-r-2 dark:border-r-slate-700 bg-gray-50 dark:bg-slate-900">
           {/* <h1>Let's Check Value: {isBoxVisible}</h1> */}

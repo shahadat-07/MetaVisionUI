@@ -12,7 +12,7 @@ const SinglePostCard = (props) => {
   const { postImg, comments } = props.postDetails;
   // console.log("frim single", comments);
   return (
-    <div className="card lg:mx-0 uk-animation-slide-bottom-small">
+    <div className="lg:mx-0 shadow-lg">
       <div className="flex justify-between items-center lg:p-4 p-2.5">
         <PostTopBar postDetails={postDetails} />
         <EditMenu />
