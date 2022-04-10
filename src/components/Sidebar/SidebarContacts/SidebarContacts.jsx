@@ -3,13 +3,13 @@ import Contact from "./Contact/Contact";
 
 const SidebarContacts = () => {
   return (
-    <section className="mt-3 border-t-2 dark:border-t-slate-700">
+    <section className="mt-3 border-t-2 dark:border-t-slate-700 bg-white w-[300px] ">
       <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-3">
         {" "}
         Contacts{" "}
       </h3>
 
-      <div className="my-2 ml-1">
+      <div className="py-2 ml-1">
         <Contact
           avatar="https://i.ibb.co/1JKq6YT/avatar-1.jpg"
           userName="@ireli9"

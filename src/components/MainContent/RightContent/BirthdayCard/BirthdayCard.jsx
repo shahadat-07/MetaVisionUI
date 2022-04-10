@@ -9,7 +9,6 @@ const BirthdayCard = () => {
     setVisible(true);
   };
 
-  // console.log(isBoxVisible);
   return (
     <>
       <a onClick={toogle} href="#birthdays">

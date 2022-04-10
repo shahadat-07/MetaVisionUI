@@ -8,8 +8,6 @@ import {
 const Contact = (props) => {
   const { userImg, isActive, userName } = props.user;
   const [isBoxVisible, setVisible] = useState(false);
-  console.log(isBoxVisible);
-
   const toogle = () => {
     setVisible(true);
   };
