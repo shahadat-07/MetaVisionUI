@@ -58,7 +58,7 @@ const PostCard = () => {
   ];
 
   return (
-    <section className="space-y-7 drop-shadow-lg">
+    <section className="space-y-7">
       {postDetails.map((post) => (
         <SinglePostCard postDetails={post} />
       ))}

@@ -20,7 +20,7 @@ const LikedBy = () => {
           alt=""
         />
       </div>
-      <div className="dark:text-gray-100">
+      <div className="text-gray-600 text-sm dark:text-gray-100">
         Liked <strong> @u-Piaow</strong> and <strong> 209 Others </strong>
       </div>
     </div>

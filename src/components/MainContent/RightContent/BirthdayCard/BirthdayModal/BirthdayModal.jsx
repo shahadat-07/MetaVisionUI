@@ -3,9 +3,7 @@ import BirthdayCard from "./BirthdayCard/BirthdayCard";
 
 const BirthdayModal = ({ isBoxVisible }) => {
   return (
-    <div
-      className={`hidden absolute z-[100] bg-white top-24 left-96 rounded-xl shadow-lg w-1/2 p-6`}
-    >
+    <div className={`bg-white top-24 left-96 rounded-xl shadow-lg w-1/2 p-6`}>
       {/* <!-- close button --> */}
       {/* <button className="p-2.5 bg-gray-100 rounded-full m-3" type="button">
         Hi

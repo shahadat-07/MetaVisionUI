@@ -1,6 +1,6 @@
 import React from "react";
 
-const BirthdayCard = ({ userImg, userName, years }) => {
+const Card = ({ userImg, userName, years }) => {
   return (
     <div className="flex items-center sm:space-x-6 space-x-3">
       <img
@@ -19,9 +19,7 @@ const BirthdayCard = ({ userImg, userName, years }) => {
         <div className="relative">
           <input
             type="text"
-            name
-            id
-            className="py-2 px-3 border rounded-sm w-full focus:outline-0"
+            className="py-2 px-3 border rounded-lg w-full focus:outline-0 border-gray-400"
             placeholder="Write her on Timeline"
           />
           <ion-icon
@@ -34,4 +32,4 @@ const BirthdayCard = ({ userImg, userName, years }) => {
   );
 };
 
-export default BirthdayCard;
+export default Card;
