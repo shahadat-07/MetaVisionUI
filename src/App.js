@@ -7,7 +7,7 @@ import Billet from "./components/Billet/Billet";
 function App() {
   return (
     <div>
-      {/* <Billet /> */}
+      <Billet />
       <Header />
       <Sidebar />
       <MainContent />
