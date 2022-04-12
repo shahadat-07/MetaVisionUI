@@ -27,7 +27,7 @@ const Messages = () => {
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >
-        <div onMouseEnter={toogle}>
+        <div>
           <div>
             <h1 className="text-xl font-semibold text-gray-600 dark:text-gray-100 mb-4">
               Messages{" "}
@@ -110,7 +110,7 @@ const Messages = () => {
               />
             </ul>
           </div>
-          <div className="sticky bottom-0 bg-white text-center pb-4">
+          <div className="sticky bottom-0 bg-white text-center pb-4 pt-2">
             <a href="#id" className="font-semibold text-blue-700">
               {" "}
               See all in Messages

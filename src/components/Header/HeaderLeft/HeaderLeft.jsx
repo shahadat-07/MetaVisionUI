@@ -5,14 +5,12 @@ import { MenuAlt1Icon } from "@heroicons/react/solid";
 
 const HeaderLeft = () => {
   const [isBoxVisible, setVisible] = useState({ isBoxVisible: false });
-  const isVisible = isBoxVisible.isBoxVisible;
-  console.log(isVisible);
   const toogle = () => {
     setVisible((prevState) => ({ isBoxVisible: !prevState.isBoxVisible }));
   };
   return (
     <div className="flex items-center space-x-2 lg:space-x-5">
-      <SidebarToogle.Provider value={isVisible}>
+      <SidebarToogle.Provider value={isBoxVisible}>
         <MenuAlt1Icon
           onClick={toogle}
           className=" w-8 text-gray-700 dark:text-gray-50 cursor-pointer"

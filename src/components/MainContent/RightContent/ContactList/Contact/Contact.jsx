@@ -11,12 +11,10 @@ const Contact = (props) => {
   const toogle = () => {
     setVisible(true);
   };
-  const test = () => {
+  const toogleOut = () => {
     setVisible(false);
   };
-  const toogleOut = () => {
-    setTimeout(test, 0);
-  };
+
   return (
     <section className="relative ">
       <div onMouseEnter={toogle} onMouseLeave={toogleOut}>
@@ -32,7 +30,7 @@ const Contact = (props) => {
         </a>
       </div>
       <div
-        className={`absolute z-50 bg-white dark:bg-slate-800 -top-10 -left-96 shadow-lg px-6 py-4 text-center  ${
+        className={`absolute z-50 bg-white dark:bg-slate-800 -top-20 -left-[350px] shadow-xl px-6 py-4 text-center  ${
           isBoxVisible ? "" : "hidden"
         }`}
       >
@@ -47,26 +45,26 @@ const Contact = (props) => {
           <p className="font-semibold text-lg text-gray-900 dark:text-gray-200 mb-2">
             {userName}
           </p>
-          <p className="dark:text-gray-200">
+          <p className="text-gray-800 dark:text-gray-200">
             Become friend with <span className="font-bold">@john</span> and{" "}
             <span className="font-bold">
               14 <br />
               Others
             </span>
           </p>
-          <div className="flex items-center space-x-4 text-base mt-4">
+          <div className="flex items-center space-x-2 text-base mt-4">
             <a href="#">
               {" "}
-              <span className="flex items-center bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg">
+              <span className="flex text-sm items-center bg-blue-700 text-white font-semibold py-1 px-2.5 rounded-lg">
                 <ChatAltIcon className="w-6 mr-1.5" />
                 Send message
               </span>
             </a>
             <a href="#">
-              <MenuIcon className="w-14 bg-blue-700 px-4 py-2 text-white font-medium rounded-lg" />
+              <MenuIcon className="w-11 bg-blue-700 px-2.5 py-1 text-white font-medium rounded-lg" />
             </a>
             <a href="#">
-              <DotsHorizontalIcon className="w-14 bg-blue-700 px-4 py-2 text-white font-medium rounded-lg" />
+              <DotsHorizontalIcon className="w-11 bg-blue-700 px-2.5 py-1 text-white font-medium rounded-lg" />
             </a>
           </div>
         </div>

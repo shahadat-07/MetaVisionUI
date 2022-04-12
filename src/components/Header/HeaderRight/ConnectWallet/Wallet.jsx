@@ -6,7 +6,7 @@ const Wallet = () => {
       <button
         type="button"
         data-modal-toggle="walletModal"
-        className="text-red-500 dark:text-gray-100 font-semibold bg-red-100 dark:bg-slate-700 px-4 py-2 rounded-md text-sm"
+        className="hidden md:block text-red-500 dark:text-gray-100 font-semibold bg-red-100 dark:bg-slate-700 px-4 py-2 rounded-md text-sm"
       >
         Connect wallet
       </button>

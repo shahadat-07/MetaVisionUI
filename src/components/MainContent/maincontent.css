@@ -12,7 +12,7 @@
 
 @media (max-width: 1200px) {
   .main_content {
-    padding-top: 65px !important;
+    /* padding-top: 65px !important; */
     padding-bottom: 50px;
   }
   .mcontainer {

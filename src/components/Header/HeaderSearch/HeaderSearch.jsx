@@ -34,7 +34,7 @@ const HeaderSearch = () => {
           isBoxVisible ? "" : "hidden"
         }`}
       >
-        <h4 className="font-semibold text-lg dark:text-gray-100 mb-4">
+        <h4 className="font-semibold text-lg dark:text-gray-100 mb-">
           {" "}
           Recently{" "}
         </h4>

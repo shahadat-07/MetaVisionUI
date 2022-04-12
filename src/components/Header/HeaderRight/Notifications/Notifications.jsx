@@ -25,16 +25,16 @@ const Notifications = () => {
       </a>
       {/* w-3/4 sm:w-2/4 lg:w-2/4 */}
       <div
-        className={`absolute border shadow-xl px-5 py-6 bg-white dark:bg-slate-900 rounded-lg w-[60vw] sm:w-[50vw] md:w-[35vw] lg-w-[15vw] xl:w-[25vw] 2xl:w-[25vw] top-16 right-3 h-[580px] border-gray-100 overflow-auto ${
+        className={`absolute border shadow-xl pl-4 pt-4 md:p-4 lg:p-7 bg-white dark:bg-slate-900 rounded-lg w-[60vw] sm:w-[50vw] md:w-[35vw] lg-w-[15vw] xl:w-[25vw] 2xl:w-[25vw] top-16 right-3 h-[580px] border-gray-100 overflow-auto ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >
         <div className="">
           <div className="">
-            <h1 className="text-xl font-semibold text-gray-600 dark:text-gray-100 mb-4">
+            <h1 className="text-xl font-semibold text-gray-600 dark:text-gray-100 mb-2 md:mb-4">
               Notifications{" "}
             </h1>
-            <div className="">
+            {/* <div className="">
               <a href="#id" data-tippy-placement="left" title="Notifications">
                 <ion-icon name="settings-outline"></ion-icon>
               </a>
@@ -45,7 +45,7 @@ const Notifications = () => {
               >
                 <ion-icon name="checkbox-outline"></ion-icon>
               </a>
-            </div>
+            </div> */}
           </div>
           <ul>
             <Notification

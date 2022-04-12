@@ -1,10 +1,11 @@
 import React from "react";
 import StoryBlock from "./StoryBlock/StoryBlock";
 import "./UserStory.css";
+import { ChevronRightIcon } from "@heroicons/react/solid";
 
 const UserStory = () => {
   return (
-    <div className="user_story grid md:grid-cols-5 grid-cols-3 gap-2 lg:-mx-20 relative">
+    <div className="grid md:grid-cols-5 grid-cols-3 gap-2 lg:-mx-20 relative ">
       <StoryBlock
         storyImg="https://i.ibb.co/bXZy3tY/meta.png"
         storyAvatar="https://i.ibb.co/f1mwB8V/avatar-6.jpg"
@@ -31,11 +32,10 @@ const UserStory = () => {
         storyContent="@stanley"
       />
       <span
-        className="absolute bg-white lg:flex items-center justify-center p-2 rounded-full 
-                      shadow-md text-xl w-9 z-10 uk-position-center-right -mr-4 hidden"
-        uk-toggle="target: body ; cls: story-active"
+        className="absolute cursor-pointer bg-white lg:flex items-center justify-center p-2 rounded-full 
+                      shadow-md text-xl w-9 z-10 -mr-4 right-0 top-1/2 -translate-y-1/2"
       >
-        <i className="icon-feather-chevron-right"></i>
+        <ChevronRightIcon />
       </span>
     </div>
   );
