@@ -17,7 +17,7 @@ const CreatePostPopup = (props) => {
   return (
     <section>
       <div
-        className={` absolute bg-white dark:bg-slate-700 top-0 z-50 ${
+        className={` absolute bg-white dark:bg-slate-700 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >
