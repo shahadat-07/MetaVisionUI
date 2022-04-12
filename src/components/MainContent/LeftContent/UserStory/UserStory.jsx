@@ -5,7 +5,7 @@ import { ChevronRightIcon } from "@heroicons/react/solid";
 
 const UserStory = () => {
   return (
-    <div className="grid md:grid-cols-5 grid-cols-3 gap-2 lg:-mx-20 relative ">
+    <div className="user_story grid md:grid-cols-5 grid-cols-3 gap-2 lg:-mx-20 relative ">
       <StoryBlock
         storyImg="https://i.ibb.co/bXZy3tY/meta.png"
         storyAvatar="https://i.ibb.co/f1mwB8V/avatar-6.jpg"
