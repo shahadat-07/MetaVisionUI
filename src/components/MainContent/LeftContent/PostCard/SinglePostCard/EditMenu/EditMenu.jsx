@@ -17,7 +17,7 @@ const EditMenu = () => {
     setVisible({ isBoxVisible: false });
   };
   return (
-    <div className="relative">
+    <div className="relative z-50">
       <a onClick={toogle} onBlur={toogleOut} href="#id">
         {" "}
         <DotsHorizontalIcon className="w-10 text-2xl text-gray-700 dark:text-gray-200 hover:bg-gray-200 rounded-full p-2 transition -mr-1 dark:hover:bg-gray-700" />
