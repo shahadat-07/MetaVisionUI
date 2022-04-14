@@ -18,20 +18,21 @@ const Notifications = () => {
   return (
     <>
       {" "}
+      <SearchIcon className="w-8 text-gray-700  bg-gray-200  cursor-pointer rounded-full p-1.5 mr-[-15px] ml-4 md:hidden" />
       <a onClick={toogle} onBlur={toogleOut} href="#id" className="relative">
-        <BellIcon className="h-9 text-gray-700 dark:text-gray-50 bg-gray-200 dark:bg-slate-700 rounded-full p-2 ml-7" />
+        <BellIcon className="h-9 text-gray-700  bg-gray-200  rounded-full p-2 ml-7" />
         <div class="rounded-full flex p-2 absolute bg-red-500 top-[-5px] left-14">
           <p class="absolute top-0 left-1 font-bold text-white text-xs">3</p>
         </div>
       </a>
       <div
-        className={`absolute border shadow-xl pl-4 pt-4 md:p-4 lg:p-7 bg-white dark:bg-slate-900 rounded-lg w-[60vw] sm:w-[50vw] md:w-[35vw] lg-w-[15vw] xl:w-[25vw] 2xl:w-[25vw] top-16 right-3 h-[580px] border-gray-100 overflow-auto ${
+        className={`absolute border shadow-xl pl-4 pt-4 md:p-4 lg:p-7 bg-white  rounded-lg w-[60vw] sm:w-[50vw] md:w-[35vw] lg-w-[15vw] xl:w-[25vw] 2xl:w-[25vw] top-16 right-3 h-[580px] border-gray-100 overflow-auto ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >
         <div className="">
           <div className="">
-            <h1 className="text-xl font-semibold text-gray-600 dark:text-gray-100 mb-2 md:mb-4">
+            <h1 className="text-xl font-semibold text-gray-600  mb-2 md:mb-4">
               Notifications{" "}
             </h1>
           </div>

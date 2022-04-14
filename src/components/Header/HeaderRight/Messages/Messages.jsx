@@ -16,20 +16,20 @@ const Messages = () => {
   return (
     <>
       <a onClick={toogle} onBlur={toogleOut} href="#id" className="relative">
-        <ChatAltIcon className="h-9 text-gray-700 dark:text-gray-50 bg-gray-200 dark:bg-slate-700 rounded-full p-2 ml-3.5" />
+        <ChatAltIcon className="h-9 text-gray-700  bg-gray-200  rounded-full p-2 ml-3.5" />
         <div class="rounded-full flex p-2 absolute bg-red-500 top-[-5px] left-10">
           <p class="absolute top-0 left-1 font-bold text-white text-xs">4</p>
         </div>
       </a>
 
       <div
-        className={`z-50 absolute border shadow-xl px-5 pt-6 bg-white dark:bg-slate-900 rounded-lg w-[60vw] sm:w-[50vw] md:w-[35vw] lg-w-[15vw] xl:w-[25vw] 2xl:w-[25vw] h-[580px] top-16 right-3 overflow-auto ${
+        className={`z-50 absolute border shadow-xl px-5 pt-6 bg-white  rounded-lg w-[60vw] sm:w-[50vw] md:w-[35vw] lg-w-[15vw] xl:w-[25vw] 2xl:w-[25vw] h-[580px] top-16 right-3 overflow-auto ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >
         <div>
           <div>
-            <h1 className="text-xl font-semibold text-gray-600 dark:text-gray-100 mb-4">
+            <h1 className="text-xl font-semibold text-gray-600 -100 mb-4">
               Messages{" "}
             </h1>
             <div className="">
@@ -49,7 +49,7 @@ const Messages = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             type="text"
-            className="mb-6 bg-gray-100 focus:bg-gray-200 dark:bg-slate-800 focus:dark:bg-slate-700 outline-0 rounded-full py-2 px-4 w-full placeholder:text-sm placeholder:font-medium "
+            className="mb-6 bg-gray-100 focus:bg-gray-200   outline-0 rounded-full py-2 px-4 w-full placeholder:text-sm placeholder:font-medium "
             placeholder="Search in Messages"
           />
           <div className="">

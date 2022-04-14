@@ -15,14 +15,14 @@ const Sidebar = () => {
     <section>
       <MenuAlt1Icon
         onClick={toogle}
-        className="fixed lg:hidden ml-96 w-7 -left-[370px] top-3 md:top-6 z-[200] text-gray-700 dark:text-gray-50 cursor-pointer"
+        className="fixed lg:hidden ml-96 w-7 -left-[370px] top-3 md:top-6 z-[200] text-gray-700 cursor-pointer"
       />
       <div
         className={`${
           isBoxVisible.isBoxVisible ? "" : "translate-x-0"
         } -translate-x-96 lg:translate-x-0 w-[300px] transition-all delay-200 ease-in fixed -top-6 md:-top-1 left-0 z-10 overflow-scroll overflow-x-hidden h-full scroll-px-px	`}
       >
-        <div className="px-3 mt-[78px] border-t-2 bor border-r-2 dark:border-r-slate-700 bg-gray-50 dark:bg-slate-900">
+        <div className="px-3 mt-[78px] border-t-2 bor border-r-2  bg-gray-50 ">
           <SidebarLinks />
           <SidebarContacts />
           <SidebarFooter />

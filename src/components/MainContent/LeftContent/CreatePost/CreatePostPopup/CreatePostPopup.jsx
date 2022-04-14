@@ -18,24 +18,24 @@ const CreatePostPopup = (props) => {
     <section>
       <div
         onClick={toogleOut}
-        className={`bg-[#EBEBEC] dark:bg-slate-700 fixed h-[100%] w-[100%] top-0 left-0 right-0 bottom-0 z-[100] opacity-70 	 ${
+        className={`bg-[#EBEBEC]  fixed h-[100%] w-[100%] top-0 left-0 right-0 bottom-0 z-[100] opacity-70 	 ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       ></div>
       <div
-        className={`fixed bg-white  dark:bg-slate-900 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[110] rounded-lg	 ${
+        className={`fixed bg-white   left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[110] rounded-lg	 ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >
         <div className="rounded-lg p-0 relative shadow-2xl">
           <div className="text-center py-3 border-b">
-            <h3 className="relative text-lg font-semibold text-gray-700 dark:text-gray-200">
+            <h3 className="relative text-lg font-semibold text-gray-700 ">
               {" "}
               Create Post{" "}
             </h3>
             <XIcon
               onClick={toogleOut}
-              className="absolute top-1 right-2 w-10 bg-gray-100 dark:bg-slate-900 text-gray-500 dark:text-gray-200 rounded-full p-2.5 cursor-pointer"
+              className="absolute top-1 right-2 w-10 bg-gray-100  text-gray-500  rounded-full p-2.5 cursor-pointer"
             />
           </div>
           <div className="flex flex-1 items-start space-x-4 p-5">
@@ -54,7 +54,7 @@ const CreatePostPopup = (props) => {
                   autoFocus={true}
                   value={postWritting}
                   onChange={(e) => setPostWritting(e.target.value)}
-                  className="text-black shadow-none focus:shadow-none text-xl font-medium resize-none border-0 focus:ring-0 bg-gray-50 dark:bg-slate-900"
+                  className="text-black shadow-none focus:shadow-none text-xl font-medium resize-none border-0 focus:ring-0 bg-gray-50 "
                   rows="5"
                   cols="32"
                   placeholder="What's Your Mind ? Stella!"
@@ -63,8 +63,8 @@ const CreatePostPopup = (props) => {
             </div>
           </div>
           <div className="bsolute bottom-0 p-4 space-x-4 w-full">
-            <div className="flex bg-gray-50 dark:bg-slate-900 border border-purple-100 dark:border-0 rounded-2xl p-2 shadow-sm items-center">
-              <div className="lg:block hidden ml-1 text-sm dark:text-gray-200">
+            <div className="flex bg-gray-50  border border-purple-100  rounded-2xl p-2 shadow-sm items-center">
+              <div className="lg:block hidden ml-1 text-sm ">
                 {" "}
                 Add to your post{" "}
               </div>
@@ -201,7 +201,7 @@ const CreatePostPopup = (props) => {
                 <svg
                   onClick={toogle}
                   // onBlur={toogleOut}
-                  className=" hover:bg-gray-200 dark:bg-gray-200 h-9 p-1.5 rounded-full w-9 cursor-pointer"
+                  className=" hover:bg-gray-200  h-9 p-1.5 rounded-full w-9 cursor-pointer"
                   id="veiw-more"
                   uk-toggle="target: #veiw-more; animation: uk-animation-fade"
                   fill="none"
@@ -223,7 +223,7 @@ const CreatePostPopup = (props) => {
             </div>
           </div>
           <div className="flex items-center w-full justify-between border-t p-3">
-            <select className="mt-2 border-gray-400 dark:bg-slate-900 dark:text-gray-200">
+            <select className="mt-2 border-gray-400  ">
               <option className="text-gray-500">Only me</option>
               <option className="text-gray-500">Every one</option>
               <option className="text-gray-500">People I Follow </option>

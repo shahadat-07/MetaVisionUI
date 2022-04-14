@@ -137,7 +137,7 @@ const ContactList = () => {
   });
 
   return (
-    <section>
+    <section className="lg:fixed lg:top-64">
       <div className="w-full max-w-md px-2 pt-8 pb-16 sm:px-0 ">
         <Tab.Group>
           <Tab.List className="flex p-1 space-x-1">
@@ -146,10 +146,10 @@ const ContactList = () => {
                 key={category}
                 className={({ selected }) =>
                   classNames(
-                    "w-full py-2.5 text-base font-semibold text-blue-700 dark:text-gray-200",
+                    "w-full py-2.5 text-base font-semibold text-blue-700 ",
 
                     selected
-                      ? "border-b-[3px] border-blue-700 dark:bg-slate-600 shadow outline-none"
+                      ? "border-b-[3px] border-blue-700  shadow outline-none"
                       : "hover:bg-white/[0.2] "
                   )
                 }
@@ -158,7 +158,7 @@ const ContactList = () => {
               </Tab>
             ))}
           </Tab.List>
-          <Tab.Panels className="mt-2 ">
+          <Tab.Panels className="mt-2 lg:h-[400px] lg:w-80 lg:overflow-scroll">
             {Object.values(categories).map((users, idx) => (
               <Tab.Panel
                 key={idx}

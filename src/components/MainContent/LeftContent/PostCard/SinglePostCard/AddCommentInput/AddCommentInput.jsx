@@ -3,12 +3,12 @@ import { React, useState } from "react";
 const AddCommentInput = () => {
   const [comment, setComment] = useState();
   return (
-    <div className="bg-gray-100 rounded-full relative dark:bg-gray-800 ">
+    <div className="bg-gray-100 rounded-full relative  ">
       <input
         value={comment}
         onChange={(e) => setComment(e.target.value)}
         placeholder="Add your Comment.."
-        className="bg-transparent dark max-h-10 shadow-none px-5 py-5 outline-0	"
+        className="bg-transparent  max-h-10 shadow-none px-5 py-5 outline-0	"
       />
       {/* <div className="-m-0.5 absolute bottom-0 flex items-center right-3 text-xl">
         <a href="#id">

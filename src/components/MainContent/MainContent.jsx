@@ -5,7 +5,7 @@ import "./maincontent.css";
 
 const MainContent = () => {
   return (
-    <div className="main_content bg-gray-50 dark:bg-slate-900">
+    <div className="main_content bg-gray-50 ">
       <div className="mcontainer">
         <div class="lg:flex lg:space-x-10">
           <LeftContent />

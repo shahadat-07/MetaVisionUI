@@ -12,27 +12,27 @@ const BirthdayCard = () => {
     setVisible({ isBoxVisible: false });
   };
   return (
-    <>
+    <section className="">
       <div>
         <div
           onClick={toogleOut}
-          className={`bg-[#EBEBEC] dark:bg-slate-900 fixed h-[100%] w-[100%] top-0 left-0 right-0 bottom-0 z-[100] opacity-70 ${
+          className={` bg-[#EBEBEC]  fixed h-[100%] w-[100%] top-0 left-0 right-0 bottom-0 z-[100] opacity-70 ${
             isBoxVisible.isBoxVisible ? "" : "hidden"
           }`}
         ></div>
         <button onClick={toogle} type="button">
-          <div className="bg-white text-left dark:bg-slate-700 px-4 py-2 rounded-md shadow">
-            <h3 className="text-line-through font-semibold mb-1 dark:text-gray-200">
+          <div className="bg-white text-left px-4 py-2 rounded-md shadow lg:fixed lg:top-26 lg:w-72">
+            <h3 className="text-line-through font-semibold mb-1 ">
               {" "}
               Birthdays{" "}
             </h3>
-            <div className="-mx-2 duration-300 flex hover:bg-gray-50 dark:hover:bg-slate-800 px-2 py-2 rounded-md">
+            <div className="-mx-2 duration-300 flex hover:bg-gray-50  px-2 py-2 rounded-md">
               <img
                 src="https://i.ibb.co/2sQfpgZ/gift-icon.png"
                 className="w-9 h-9 mr-3"
                 alt=""
               />
-              <p className="line-clamp-2 leading-6 text-gray-600 dark:text-gray-200 text-base">
+              <p className="line-clamp-2 leading-6 text-gray-600 text-base">
                 {" "}
                 <strong> @MappedSwap</strong> and <strong> two others </strong>
                 have a birthdays to day .
@@ -46,15 +46,15 @@ const BirthdayCard = () => {
           } overflow-y-auto overflow-x-hidden fixed top-1/2 left-1/2 -translate-y-[50%] -translate-x-[50%] z-[110] w-1/2 justify-center items-center`}
         >
           <div className="">
-            <div className=" bg-white rounded-lg shadow dark:bg-gray-700 px-8 pb-6">
-              <div className="flex justify-between items-center py-4 px-6 rounded-t border-b dark:border-gray-600 ">
-                <h3 className="text-base font-semibold text-gray-900 lg:text-xl dark:text-white">
+            <div className=" bg-white rounded-lg shadow  px-8 pb-6">
+              <div className="flex justify-between items-center py-4 px-6 rounded-t border-b  ">
+                <h3 className="text-base font-semibold text-gray-900 lg:text-xl ">
                   Today's birthdays
                 </h3>
                 <button
                   onClick={toogleOut}
                   type="button"
-                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center  "
                   data-modal-toggle="walletModal2"
                 >
                   <svg
@@ -119,7 +119,7 @@ const BirthdayCard = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

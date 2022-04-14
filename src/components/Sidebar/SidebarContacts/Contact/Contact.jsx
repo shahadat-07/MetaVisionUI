@@ -6,7 +6,7 @@ const Contact = ({ avatar, className = "", userName }) => {
       <div className="contact-avatar">
         <img className="w-10 rounded-full" src={avatar} alt="" />
       </div>
-      <div className="text-gray-600 dark:text-gray-200">{userName}</div>
+      <div className="text-gray-600 ">{userName}</div>
     </a>
   );
 };

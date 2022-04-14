@@ -5,7 +5,8 @@ const LoadMore = () => {
     <div className="flex justify-center mt-6">
       <a
         href="#id"
-        className="bg-white dark:bg-gray-700 font-semibold my-3 px-6 py-2 rounded-full shadow-md dark:text-white"
+        className="bg-white font-semibold my-3 px-6 py-2 rounded-full shadow-md 
+        "
       >
         Load more ..
       </a>

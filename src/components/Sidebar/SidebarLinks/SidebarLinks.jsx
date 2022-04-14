@@ -11,7 +11,7 @@ const SidebarLinks = () => {
     <>
       <ul>
         <SidebarItem
-          className="text-blue-700 bg-blue-100 dark:bg-slate-700 transition"
+          className="text-blue-700 bg-blue-100  transition"
           emoji="🤗"
           title="My Feed"
         />
@@ -78,16 +78,16 @@ const SidebarLinks = () => {
       </ul>
       <a
         href="#id"
-        className="see-mover h-10 flex my-1 pl-2 rounded-xl text-gray-600 dark:text-gray-200"
+        className="see-mover h-10 flex my-1 pl-2 rounded-xl text-gray-600 "
       >
         <span
           onClick={toogle}
-          className={`w-full flex items-center hover:bg-gray-100 dark:hover:bg-slate-700 ${
+          className={`w-full flex items-center hover:bg-gray-100  ${
             isBoxVisible.isBoxVisible ? "hidden" : ""
           }`}
         >
           <svg
-            className="  bg-gray-100 dark:bg-slate-700 mr-2 p-0.5 rounded-full text-lg w-7"
+            className="  bg-gray-100  mr-2 p-0.5 rounded-full text-lg w-7"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ const SidebarLinks = () => {
         </span>
         <span
           onClick={toogle}
-          className={`w-full flex items-center hover:bg-gray-100 dark:hover:bg-slate-700 ${
+          className={`w-full flex items-center hover:bg-gray-100  ${
             isBoxVisible.isBoxVisible ? "" : "hidden"
           }`}
         >
