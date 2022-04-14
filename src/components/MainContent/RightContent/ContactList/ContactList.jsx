@@ -158,13 +158,12 @@ const ContactList = () => {
               </Tab>
             ))}
           </Tab.List>
-          <Tab.Panels className="mt-2">
+          <Tab.Panels className="mt-2 ">
             {Object.values(categories).map((users, idx) => (
               <Tab.Panel
                 key={idx}
                 className={classNames(
-                  " dark:bg-slate-800 rounded-xl p-3",
-                  "focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60"
+                  " dark:bg-slate-800 rounded-xl p-3 outline-none"
                 )}
               >
                 {users.map((user) => (
