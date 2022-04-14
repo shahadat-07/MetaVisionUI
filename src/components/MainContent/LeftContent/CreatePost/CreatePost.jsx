@@ -22,8 +22,9 @@ const CreatePost = () => {
         <PostInput.Consumer>
           {(value) => (
             <input
+              autoFocus={false}
               value={value}
-              onFocus={toogle}
+              onClick={toogle}
               placeholder="What's Your Mind ? Hamse!"
               className="bg-gray-100 focus:bg-gray-200 dark:bg-slate-800 focus:dark:bg-slate-700 flex-1 h-10 px-6 rounded-full"
             />

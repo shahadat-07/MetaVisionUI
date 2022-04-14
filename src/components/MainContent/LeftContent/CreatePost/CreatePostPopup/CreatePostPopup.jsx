@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useCallback } from "react";
 import { XIcon } from "@heroicons/react/solid";
 import PostInput from "../../../../../Contexts/PostInput";
 
@@ -12,8 +12,8 @@ const CreatePostPopup = (props) => {
 
   const toogleOut = props.toogleOut;
 
-  const [postWritting, setPostWritting] = useState("");
-  // backdrop-blur-xl bg-white/30
+  const [postWritting, setPostWritting] = useState();
+  // const autoFocus = useCallback((el) => (el ? el.focus() : null), []);
   return (
     <section>
       <div
@@ -49,7 +49,9 @@ const CreatePostPopup = (props) => {
             <div className="flex-1">
               <PostInput.Provider value={postWritting}>
                 {" "}
+                {/* <input type="text" autoFocus /> */}
                 <textarea
+                  autoFocus={true}
                   value={postWritting}
                   onChange={(e) => setPostWritting(e.target.value)}
                   className="text-black shadow-none focus:shadow-none text-xl font-medium resize-none border-0 focus:ring-0 bg-gray-50 dark:bg-slate-900"
@@ -198,7 +200,7 @@ const CreatePostPopup = (props) => {
                 {/* <!-- view more --> */}
                 <svg
                   onClick={toogle}
-                  onBlur={toogleOut}
+                  // onBlur={toogleOut}
                   className=" hover:bg-gray-200 dark:bg-gray-200 h-9 p-1.5 rounded-full w-9 cursor-pointer"
                   id="veiw-more"
                   uk-toggle="target: #veiw-more; animation: uk-animation-fade"

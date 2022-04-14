@@ -20,15 +20,15 @@ const HeaderSearch = () => {
 
   return (
     <section>
-      {/* <SearchIcon className="w-8 text-gray-700 dark:text-gray-50 bg-gray-200 dark:bg-slate-700 cursor-pointer rounded-full p-1.5 mr-[-15px] ml-4 md:hidden" /> */}
-      <div className={`relative md:block`}>
+      <SearchIcon className="w-8 text-gray-700 dark:text-gray-50 bg-gray-200 dark:bg-slate-700 cursor-pointer rounded-full p-1.5 mr-[-15px] ml-4 md:hidden" />
+      <div className={`relative hidden md:block`}>
         <input
           value={state}
           onChange={(e) => setState(e.target.value)}
           onFocus={toogleIn}
           onBlur={toogleOut}
           type="text"
-          className="py-2 lg:py-2.5 px-2 lg:pl-10 w-5 md:w-56 lg:w-96 bg-gray-100 focus:bg-gray-200 dark:bg-slate-800 focus:dark:bg-slate-700 rounded-full placeholder:text-xs lg:placeholder:text-sm focus:ring-0"
+          className="py-2 lg:py-2.5 px-2 lg:pl-10 md:w-56 lg:w-96 bg-gray-100 focus:bg-gray-200 dark:bg-slate-800 focus:dark:bg-slate-700 rounded-full placeholder:text-xs lg:placeholder:text-sm focus:ring-0"
           placeholder="Search for Friends, Videos and more.."
           autocomplete="off"
         />
