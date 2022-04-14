@@ -12,7 +12,7 @@ const CreatePostPopup = (props) => {
 
   const toogleOut = props.toogleOut;
 
-  const [postWritting, setPostWritting] = useState(".");
+  const [postWritting, setPostWritting] = useState("");
   // backdrop-blur-xl bg-white/30
   return (
     <section>
