@@ -158,7 +158,7 @@ const ContactList = () => {
               </Tab>
             ))}
           </Tab.List>
-          <Tab.Panels className="mt-2 lg:h-[400px] lg:w-80 lg:overflow-scroll">
+          <Tab.Panels className="mt-2 lg:h-[480px] lg:w-80 lg:overflow-scroll">
             {Object.values(categories).map((users, idx) => (
               <Tab.Panel
                 key={idx}
