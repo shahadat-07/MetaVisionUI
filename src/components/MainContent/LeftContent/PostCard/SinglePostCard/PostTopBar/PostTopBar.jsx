@@ -13,7 +13,10 @@ const PostTopBar = (props) => {
         />
       </a>
       <div className="flex-1 font-semibold capitalize">
-        <a href="#id" className="text-black dark:text-gray-100">
+        <a
+          href="#id"
+          className="text-gray-800 hover:text-blue-600 transition dark:text-gray-100"
+        >
           {username}
         </a>
         <div className="text-gray-700 dark:text-gray-50 flex items-center space-x-2">

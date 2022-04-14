@@ -3,7 +3,7 @@ import Contact from "./Contact/Contact";
 
 const SidebarContacts = () => {
   return (
-    <section className="mt-3 border-t-2 dark:border-t-slate-700 bg-gray-50 w-[300px] ">
+    <section className="mt-3 border-t-2 dark:border-t-slate-700 bg-gray-50 dark:bg-slate-900 w-[300px] ">
       <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-3">
         {" "}
         Contacts{" "}

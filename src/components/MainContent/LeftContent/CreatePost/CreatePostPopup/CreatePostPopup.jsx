@@ -18,12 +18,12 @@ const CreatePostPopup = (props) => {
     <section>
       <div
         onClick={toogleOut}
-        className={`bg-[#EBEBEC] fixed h-[100%] w-[100%] top-0 left-0 right-0 bottom-0 z-[100] opacity-70 	 ${
+        className={`bg-[#EBEBEC] dark:bg-slate-700 fixed h-[100%] w-[100%] top-0 left-0 right-0 bottom-0 z-[100] opacity-70 	 ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       ></div>
       <div
-        className={`fixed bg-white  dark:bg-slate-700 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[110] rounded-lg	 ${
+        className={`fixed bg-white  dark:bg-slate-900 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[110] rounded-lg	 ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >

@@ -1,11 +1,8 @@
 import { React, useState } from "react";
 import SidebarItem from "./SidebarItem/SidebarItem";
-import SidebarToogle from "../../../Contexts/sidebarToogle";
 
 const SidebarLinks = () => {
   const [isBoxVisible, setVisible] = useState({ isBoxVisible: false });
-  const isVisible = isBoxVisible.isBoxVisible;
-  console.log(isVisible);
 
   const toogle = () => {
     setVisible((prevState) => ({ isBoxVisible: !prevState.isBoxVisible }));
@@ -14,7 +11,7 @@ const SidebarLinks = () => {
     <>
       <ul>
         <SidebarItem
-          className="text-blue-700 bg-blue-100 transition"
+          className="text-blue-700 bg-blue-100 dark:bg-slate-700 transition"
           emoji="🤗"
           title="My Feed"
         />
