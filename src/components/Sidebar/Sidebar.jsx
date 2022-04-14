@@ -15,7 +15,7 @@ const Sidebar = () => {
     <section>
       <MenuAlt1Icon
         onClick={toogle}
-        className="absolute lg:hidden ml-96 w-7 -left-[370px] top-3 md:top-6 z-[200] text-gray-700 dark:text-gray-50 cursor-pointer"
+        className="fixed lg:hidden ml-96 w-7 -left-[370px] top-3 md:top-6 z-[200] text-gray-700 dark:text-gray-50 cursor-pointer"
       />
       <div
         className={`${
