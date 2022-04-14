@@ -162,9 +162,7 @@ const ContactList = () => {
             {Object.values(categories).map((users, idx) => (
               <Tab.Panel
                 key={idx}
-                className={classNames(
-                  " dark:bg-slate-800 rounded-xl p-3 outline-none"
-                )}
+                className={classNames("  rounded-xl p-3 outline-none")}
               >
                 {users.map((user) => (
                   <Contact user={user} />
