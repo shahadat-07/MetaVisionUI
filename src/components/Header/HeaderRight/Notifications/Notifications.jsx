@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Notification from "./Notification/Notification";
 import { BellIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/solid";
+import HeaderSearch from "./../../HeaderSearch/HeaderSearch";
 
 const Notifications = () => {
   const [isBoxVisible, setVisible] = useState({ isBoxVisible: false });
@@ -16,14 +17,13 @@ const Notifications = () => {
 
   return (
     <>
-      <SearchIcon className="w-8 text-gray-700 dark:text-gray-50 bg-gray-200 dark:bg-slate-700 rounded-full p-1.5 mr-[-15px] ml-4 md:hidden" />{" "}
+      {" "}
       <a onClick={toogle} onBlur={toogleOut} href="#id" className="relative">
         <BellIcon className="h-9 text-gray-700 dark:text-gray-50 bg-gray-200 dark:bg-slate-700 rounded-full p-2 ml-7" />
         <div class="rounded-full flex p-2 absolute bg-red-500 top-[-5px] left-14">
           <p class="absolute top-0 left-1 font-bold text-white text-xs">3</p>
         </div>
       </a>
-      {/* w-3/4 sm:w-2/4 lg:w-2/4 */}
       <div
         className={`absolute border shadow-xl pl-4 pt-4 md:p-4 lg:p-7 bg-white dark:bg-slate-900 rounded-lg w-[60vw] sm:w-[50vw] md:w-[35vw] lg-w-[15vw] xl:w-[25vw] 2xl:w-[25vw] top-16 right-3 h-[580px] border-gray-100 overflow-auto ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
@@ -34,18 +34,6 @@ const Notifications = () => {
             <h1 className="text-xl font-semibold text-gray-600 dark:text-gray-100 mb-2 md:mb-4">
               Notifications{" "}
             </h1>
-            {/* <div className="">
-              <a href="#id" data-tippy-placement="left" title="Notifications">
-                <ion-icon name="settings-outline"></ion-icon>
-              </a>
-              <a
-                href="#id"
-                data-tippy-placement="left"
-                title="Mark as read all"
-              >
-                <ion-icon name="checkbox-outline"></ion-icon>
-              </a>
-            </div> */}
           </div>
           <ul>
             <Notification

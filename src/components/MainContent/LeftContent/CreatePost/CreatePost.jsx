@@ -12,7 +12,7 @@ const CreatePost = () => {
     setVisible({ isBoxVisible: false });
   };
   return (
-    <div className="lg:mx-0 p-4">
+    <div className="lg:mx-0 p-4 shadow-md rounded-lg bg-[#FFFFFF]">
       <div className="flex space-x-3">
         <img
           src="https://i.ibb.co/FbXfQ2X/avatar-2.jpg"
