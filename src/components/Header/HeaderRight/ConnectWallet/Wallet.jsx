@@ -5,17 +5,16 @@ const Wallet = () => {
     <div>
       <button
         type="button"
-        data-modal-toggle="walletModal"
         className="hidden md:block text-red-500 dark:text-gray-100 font-semibold bg-red-100 dark:bg-slate-700 px-4 py-2 rounded-md text-sm"
       >
         Connect wallet
       </button>
 
-      <div
+      {/* <div
         id="walletModal"
         tabindex="-1"
         aria-hidden="true"
-        className="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center"
+        className="hidden overflow-y-hidden overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center"
       >
         <div className="relative p-4 w-full max-w-md h-full md:h-auto">
           <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -263,7 +262,7 @@ const Wallet = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -13,11 +13,17 @@ const CreatePostPopup = (props) => {
   const toogleOut = props.toogleOut;
 
   const [postWritting, setPostWritting] = useState("");
-
+  // backdrop-blur-xl bg-white/30
   return (
     <section>
       <div
-        className={` absolute bg-white dark:bg-slate-700 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 ${
+        onClick={toogleOut}
+        className={`bg-[#EBEBEC] fixed h-[100%] w-[100%] top-0 left-0 right-0 bottom-0 z-[100] opacity-70 	 ${
+          isBoxVisible.isBoxVisible ? "" : "hidden"
+        }`}
+      ></div>
+      <div
+        className={`fixed bg-white  dark:bg-slate-700 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[110] rounded-lg	 ${
           isBoxVisible.isBoxVisible ? "" : "hidden"
         }`}
       >
