@@ -21,7 +21,7 @@ const BirthdayCard = () => {
           }`}
         ></div>
         <button onClick={toogle} type="button">
-          <div className="bg-white text-left px-4 py-2 rounded-md shadow lg:fixed lg:top-26 lg:w-72">
+          <div className="bg-white text-left px-4 py-2 rounded-md shadow lg:fixed lg:top-[110px] lg:w-72">
             <h3 className="text-line-through font-semibold mb-1 ">
               {" "}
               Birthdays{" "}

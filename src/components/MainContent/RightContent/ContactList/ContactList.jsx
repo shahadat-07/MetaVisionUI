@@ -137,7 +137,7 @@ const ContactList = () => {
   });
 
   return (
-    <section className="lg:fixed lg:top-64">
+    <section className="lg:fixed lg:top-60">
       <div className="w-full max-w-md px-2 pt-8 pb-16 sm:px-0 ">
         <Tab.Group>
           <Tab.List className="flex p-1 space-x-1">
@@ -162,7 +162,7 @@ const ContactList = () => {
             {Object.values(categories).map((users, idx) => (
               <Tab.Panel
                 key={idx}
-                className={classNames("  rounded-xl p-3 outline-none")}
+                className={classNames("rounded-xl p-3 outline-none")}
               >
                 {users.map((user) => (
                   <Contact user={user} />
